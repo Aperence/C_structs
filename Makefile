@@ -8,7 +8,7 @@ main: library
 	$(CC) $(OPTIONS) -o main main.c $(HEADERS) $(LIBRARY) $(LIBS)
 
 
-library: priority_queue.o rbtree.o
+library: priority_queue.o   rbtree.o   hashmap.o   hashset.o   list.o   queue.o   stack.o
 	gcc -shared -o libstructs.so $^
 
 %.o: src/%.c
